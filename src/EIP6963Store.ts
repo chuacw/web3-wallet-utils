@@ -26,9 +26,14 @@ const eip6963store = {
     }
 
     window.addEventListener(eip6063AnnounceProvider, onAnnouncement as EventListener);
+    providers = [];
     window.dispatchEvent(new Event(eip6963RequestProvider));
 
     return () => window.removeEventListener(eip6063AnnounceProvider, onAnnouncement as EventListener);
+  },
+
+  clear: () => {
+    providers = [];
   }
 }
 
@@ -40,3 +45,4 @@ export {
   eip6963RequestProvider,
   useEip6963SyncProviders
 }
+
