@@ -1,0 +1,49 @@
+{
+  "name": "web3-walletutils",
+  "version": "0.1.27",
+  "dependencies": {
+    "react": "^18.3.1",
+    "web3-walletutils": "file:"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.10"
+  },
+  "description": "Utilities for Web3 wallets",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./*.js": "./dist/*.js"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "dist/*"
+      ],
+      "EIP6963Store": [
+        "dist/EIP6963Store"
+      ],
+      "EIP6963Types": [
+        "dist/EIP6963Types"
+      ]
+    }
+  },
+  "scripts": {
+    "prepublishOnly": "tsc --build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Web3",
+    "Wallet",
+    "Utilities"
+  ],
+  "author": "chuacw",
+  "license": "ISC",
+  "files": [
+    "dist/**/*"
+  ],
+  "bugs": {
+    "url": "https://github.com/chuacw/web3-walletutils/issues"
+  },
+  "homepage": "https://github.com/chuacw/web3-walletutils#readme"
+}
