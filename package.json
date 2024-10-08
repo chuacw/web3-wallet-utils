@@ -1,5 +1,5 @@
 {
-  "name": "web3-walletutils",
+  "name": "web3-wallet-utils",
   "version": "0.1.28",
   "dependencies": {
     "react": "^18.3.1"
